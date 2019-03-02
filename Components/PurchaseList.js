@@ -12,7 +12,9 @@ export default class PurchaseList extends Component {
 	}
 
 	render() {
+		// current purchase list
 		const Purchases  = this.state.purchases
+		// map through purchase array to display each purchase
 		const PurchaseDisplay = Purchases.map((purchase) => { 
 			const keys = Object.keys(purchase) 
 			return (

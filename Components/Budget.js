@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
 import PurchaseList from './PurchaseList'
+
 export default class Budget extends Component {
     state = { budget: '', isEntered: false }
+
+    // set state values when button is clicked
     handleSubmit = () => {
         this.setState({
             isEntered: true,
@@ -10,8 +13,9 @@ export default class Budget extends Component {
         })
     }
 	render() {
+        // get the current budget state 
         const {budget} = this.state
-
+        // if you haven't entered your budget yet
         if(!this.state.isEntered) {
             return (
                 <View style={styles.container}>
@@ -32,6 +36,7 @@ export default class Budget extends Component {
                 </View>
             )
         }
+        // Show budget and display purchase list
         else {
             return (
                 <View style={styles.container}>
