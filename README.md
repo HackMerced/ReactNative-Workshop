@@ -1,6 +1,7 @@
 # ReactNative-Workshop
 
 Make sure to have npm and node install!
+https://nodejs.org/en/
 
 Now, we can install react-native globally on your system if you don't have it already:
 
